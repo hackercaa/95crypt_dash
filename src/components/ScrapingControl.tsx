@@ -366,7 +366,7 @@ export const ScrapingControl: React.FC = () => {
       </div>
 
       {/* Per-Token Scraping Controls */}
-      <div className="card-modern">
+      <div className="card-modern" id="per-token-scraping-controls">
         <div className="flex items-center justify-between p-6 border-b border-gray-800">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-purple-600/20 rounded-xl flex items-center justify-center">
@@ -387,7 +387,7 @@ export const ScrapingControl: React.FC = () => {
           </button>
         </div>
 
-        <div className={`transition-all duration-300 overflow-hidden ${showTokenControls ? 'max-h-none opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="p-6 space-y-6">
           <div className="p-6 space-y-6">
             {/* Filters and Bulk Actions */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
